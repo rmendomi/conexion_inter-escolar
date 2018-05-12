@@ -13,47 +13,47 @@
 		<dependency>
 			<groupId>cl.pahlito</groupId>
 			<artifactId>conexion-interescolar-core</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>4.1.7.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>4.1.7.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
-			<version>4.1.7.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>	
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
-			<version>4.1.7.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>		
 		<dependency>
 			<groupId>org.zkoss.zk</groupId>
 			<artifactId>zkbind</artifactId>
-			<version>8.5.0</version>
+			<version>${zk.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.zkoss.zk</groupId>
 			<artifactId>zul</artifactId>
-			<version>8.5.0</version>
+			<version>${zk.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.zkoss.zk</groupId>
 			<artifactId>zkplus</artifactId>
-			<version>8.5.0</version>
+			<version>${zk.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.zkoss.zk</groupId>
 			<artifactId>zhtml</artifactId>
-			<version>8.5.0</version>
+			<version>${zk.version}</version>
 		</dependency>
 	</dependencies>
 	<repositories>
