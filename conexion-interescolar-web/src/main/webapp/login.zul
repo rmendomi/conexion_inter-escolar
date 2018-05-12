@@ -1,0 +1,34 @@
+<?page title="Conexión Interescolar" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="Conexión Interescolar" border="normal"
+		viewModel="@id('vm') @init('cl.pahlito.conexioninterescolar.vm.LoginVM')">
+		<label value="Login"></label>
+		<grid>
+			<columns>
+				<column></column>
+				<column></column>
+			</columns>
+			<rows>
+				<row>
+					<label value="Email"></label>
+					<textbox value="@bind(vm.email)"
+						constraint="no empty">
+					</textbox>
+				</row>
+				<row>
+					<label value="Clave"></label>
+					<textbox value="@bind(vm.password)" type="password"
+						constraint="no empty">
+					</textbox>
+				</row>
+				<row>
+					<cell colspan="2">
+						<button label="Ingresar"
+							onClick="@command('login')">
+						</button>
+					</cell>
+				</row>
+			</rows>
+		</grid>
+	</window>
+</zk>
