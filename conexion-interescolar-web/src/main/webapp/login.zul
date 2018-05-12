@@ -5,24 +5,31 @@
 		<label value="Login"></label>
 		<grid>
 			<columns>
-				<column></column>
+				<column width="30%"></column>
 				<column></column>
 			</columns>
 			<rows>
 				<row>
 					<label value="Email"></label>
-					<textbox value="@bind(vm.email)"
-						constraint="no empty">
+					<textbox value="@load(vm.email) @save(vm.email, before='login')"
+						constraint="/.+@.+\.[a-z]+/" width="100%">
 					</textbox>
 				</row>
 				<row>
 					<label value="Clave"></label>
-					<textbox value="@bind(vm.password)" type="password"
-						constraint="no empty">
+					<textbox value="@load(vm.password) @save(vm.password, before='login')" type="password"
+						constraint="no empty" width="100%">
 					</textbox>
 				</row>
 				<row>
-					<cell colspan="2">
+					<label value="Curso"></label>
+					<combobox placeholder="Seleccione el curso" width="100%">
+						<comboitem label="1° Básico"></comboitem>
+						<comboitem label="2° Básico"></comboitem>						
+					</combobox>
+				</row>
+				<row>
+					<cell colspan="2" align="center">
 						<button label="Ingresar"
 							onClick="@command('login')">
 						</button>
