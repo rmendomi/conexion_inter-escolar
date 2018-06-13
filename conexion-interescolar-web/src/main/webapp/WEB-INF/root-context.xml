@@ -21,4 +21,5 @@
    http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
 	<import resource="classpath:core-context.xml" />
+	<import resource="applicationContext-security.xml"/>
 </beans>

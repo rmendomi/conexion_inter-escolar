@@ -44,8 +44,7 @@
 		p:packagesToScan="cl.pahlito.conexioninterescolar.dominio" p:dataSource-ref="dataSource">
 		<property name="jpaVendorAdapter">
 			<bean
-				class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
-<!-- 				<property name="generateDdl" value="true" /> -->				
+				class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">			
 			<property name="showSql" value="false" />
             <property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" />
 			</bean>

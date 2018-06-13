@@ -8,4 +8,6 @@ public interface UsuarioRepository extends CrudRepository<UsuarioJPA, Long> {
 	
 	public UsuarioJPA findByEmailAndPassword(String email, String password);
 
+	public UsuarioJPA findByEmail(String email);
+
 }

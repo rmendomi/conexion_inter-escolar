@@ -13,7 +13,7 @@
 		<module>conexion-interescolar-web</module>
 	</modules>
 	<properties>
-		<spring.version>4.1.7.RELEASE</spring.version>
+		<spring.version>4.2.6.RELEASE</spring.version>
 		<hibernate.version>5.1.4.Final</hibernate.version>
 		<zk.version>8.5.0</zk.version>
 	</properties>

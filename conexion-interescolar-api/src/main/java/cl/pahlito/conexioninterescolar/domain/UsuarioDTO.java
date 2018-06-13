@@ -15,7 +15,7 @@ public class UsuarioDTO implements Serializable {
 	
 	private String email;
 	
-	private String pass;
+	private String password;
 
 	public Long getId() {
 		return id;
@@ -41,12 +41,12 @@ public class UsuarioDTO implements Serializable {
 		this.email = email;
 	}
 
-	public String getPass() {
-		return pass;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPass(String pass) {
-		this.pass = pass;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 }

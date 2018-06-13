@@ -48,4 +48,19 @@ public class UsuarioServiceImpl implements UsuarioService {
 		return hash;
 	}
 
+	@Override
+	public UsuarioDTO cargarUsuario(String email) {
+		UsuarioDTO usuario=null;
+		final UsuarioJPA usuarioJPA = usuarioRepository.findByEmail(email);
+		if(null!=usuarioJPA) {
+			usuario=new UsuarioDTO();
+			usuario.setId(usuarioJPA.getId());
+			usuario.setEmail(usuarioJPA.getEmail());
+			usuario.setNombre(usuarioJPA.getNombre());
+			usuario.setPassword(usuarioJPA.getPassword());
+		}
+		
+		return usuario;
+	}
+
 }
