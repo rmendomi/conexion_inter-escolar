@@ -1,4 +1,4 @@
-package cl.pahlito.conexioninterescolar.security;
+package main.java.com.interescolar.conexioninterescolar.security;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +12,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import cl.pahlito.conexioninterescolar.domain.UsuarioDTO;
-import cl.pahlito.conexioninterescolar.service.UsuarioService;
+import com.interescolar.conexioninterescolar.domain.UsuarioDTO;
+import com.interescolar.conexioninterescolar.service.UsuarioService;
 
 @Service("applicationUserDetailsService")
 public class UserDetailsServiceImpl implements UserDetailsService  {
@@ -29,11 +29,11 @@ public class UserDetailsServiceImpl implements UserDetailsService  {
 		return user;
 	}
 
-	private User cargarUsuario(String email) {
+	private User cargarUsuario(String email) { 
 		User user = null;
 		final UsuarioDTO usuario= usuarioService.cargarUsuario(email);
 		if(usuario!=null) { 
-			//TODO implementar for real
+			//TODO implementar for real 
 			final List<GrantedAuthority> authorities=new ArrayList<>();
 			authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
 			

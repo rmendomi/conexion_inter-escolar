@@ -1,6 +1,6 @@
-package cl.pahlito.conexioninterescolar.service;
+package com.interescolar.conexioninterescolar.service;
 
-import cl.pahlito.conexioninterescolar.domain.UsuarioDTO;
+import com.interescolar.conexioninterescolar.domain.UsuarioDTO;
 
 public interface UsuarioService {
 

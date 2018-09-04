@@ -1,12 +1,12 @@
-package cl.pahlito.conexioninterescolar.vm;
+package main.java.com.interescolar.conexioninterescolar.vm;
 
 import org.zkoss.bind.annotation.Command;
 import org.zkoss.bind.annotation.Init;
 import org.zkoss.zkplus.spring.SpringUtil;
 import org.zkoss.zul.Messagebox;
 
-import cl.pahlito.conexioninterescolar.domain.UsuarioDTO;
-import cl.pahlito.conexioninterescolar.service.UsuarioService;
+import com.interescolar.conexioninterescolar.domain.UsuarioDTO;
+import com.interescolar.conexioninterescolar.service.UsuarioService;
 
 public class LoginVM {
 

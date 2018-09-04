@@ -1,4 +1,4 @@
-package cl.pahlito.conexioninterescolar.service.impl;
+package com.interescolar.conexioninterescolar.service.impl;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -10,10 +10,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import cl.pahlito.conexioninterescolar.domain.UsuarioDTO;
-import cl.pahlito.conexioninterescolar.dominio.UsuarioJPA;
-import cl.pahlito.conexioninterescolar.repository.UsuarioRepository;
-import cl.pahlito.conexioninterescolar.service.UsuarioService;
+import com.interescolar.conexioninterescolar.domain.UsuarioDTO;
+import com.interescolar.conexioninterescolar.dominio.UsuarioJPA;
+import com.interescolar.conexioninterescolar.repository.UsuarioRepository;
+import com.interescolar.conexioninterescolar.service.UsuarioService;
 
 @Service("usuarioService")
 public class UsuarioServiceImpl implements UsuarioService {
